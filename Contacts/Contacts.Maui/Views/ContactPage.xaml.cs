@@ -5,15 +5,17 @@ public partial class ContactPage : ContentPage
 	public ContactPage()
 	{
 		InitializeComponent();
+
+		List<string> contacts = new List<string>()
+		{
+			"John",
+			"Shuvo",
+			"Mehedi",
+			"Riad",
+			"Samir"
+		};
+
+		listContacts.ItemsSource = contacts;
 	}
 
-    private void btnEditContact_Clicked(object sender, EventArgs e)
-    {
-        Shell.Current.GoToAsync(nameof(EditContactPage));
-    }
-
-    private void btnAddContact_Clicked(object sender, EventArgs e)
-    {
-        Shell.Current.GoToAsync(nameof(AddContactPage));
-    }
 }

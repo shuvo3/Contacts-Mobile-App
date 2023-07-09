@@ -2,23 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Contacts.Maui.Views.ContactPage"
-             Title="Contact">
+             Title="Contacts">
     <VerticalStackLayout Spacing="5">
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button 
-            x:Name="btnEditContact" 
-            Text="Edit Contact"
-            Clicked="btnEditContact_Clicked"
-            ></Button>
-        <Button 
-            x:Name="btnAddContact" 
-            Text="Add Contact"
-            Clicked="btnAddContact_Clicked"
-            ></Button>
+        
+        <ListView x:Name="listContacts" BackgroundColor="Transparent" >
+            
+        </ListView>
 
 
     </VerticalStackLayout>
